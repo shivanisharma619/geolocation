@@ -18,14 +18,13 @@ const triangleCoords = [
 function Content({
 	google,
 	loaded,
-}){
-
+}) {
 
   if(!loaded) {
   	return <div>Loading...</div>
   }
 
-  return(
+  return (
     <div className="row content p-4">
       <div className="col-12 d-flex justify-content-center p-4">
 	      <Map
@@ -50,7 +49,6 @@ function Content({
     </div>
   );
 };
-
 
 export default GoogleApiWrapper({
   apiKey: process.env.REACT_APP_GOOGLE_API_KEY,
